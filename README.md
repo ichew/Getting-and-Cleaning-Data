@@ -41,6 +41,12 @@ From the unzipped UCI HAR Dataset, we read the files and their dim()
 
 From above, we can deduce the structure of the dataset we need to build
 
+![alt text](https://github.com/ichew/Getting-and-Cleaning-Data/blob/master/Capture.JPG "Image that describes above files")
+
+Note: Above picture taken from the Getting and Cleaning Data forum. 
+
+
+
 
 | **variable_names** | features.txt | **Subject** | **Activity** |
 | ------------------ |:------------:| -----------:| ------------:|
