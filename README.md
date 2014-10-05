@@ -24,7 +24,6 @@ From the unzipped UCI HAR Dataset, we read the files and their dim()
 
 * 'train/y_train.txt': Training labels
   * with rows=7352  col=1
-  
 * 'train/subject_train.txt': Training subjects who performed the activity
   * with  rows=7352  col=1
 * 'test/y_test.txt': Test labels.
@@ -39,3 +38,12 @@ From the unzipped UCI HAR Dataset, we read the files and their dim()
   * with  rows=561  col=2
 * 'activity_labels.txt': Links the class labels with their activity name.
   * with  rows=6  col=2
+
+From above, we can deduce the structure of the dataset we need to build
+
+<table>
+ <tr><td> test </td></tr>
+</table>
+
+| **variable_names** | features.txt | **Subject** | **Activity** |
+| **data** | X_train.txt | subject_train.txt | y_train.txt |
