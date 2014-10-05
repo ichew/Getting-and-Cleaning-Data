@@ -45,10 +45,21 @@ From above, we can deduce the structure of the dataset we need to build
 
 Note: Above picture taken from the Getting and Cleaning Data forum. 
 
+### Steps to use run_analysis.R
 
+1. First, download the data from below link
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+2. Un-zip and store the contents in a working directory.
+In the run_analysis.R script, set the variable **wd_path** accordingly with this working directory.
+<br>I set it to wd_path = "C:/getdata-007/UCI HAR Dataset/"  
 
-| **variable_names** | features.txt | **Subject** | **Activity** |
-| ------------------ |:------------:| -----------:| ------------:|
-| **data**           | X_train.txt | subject_train.txt | y_train.txt |
+3. Run source("run_analysis.R"). This script will then
+   1. Merges the training and the test sets to create one data set.
+   2. Extracts only the measurements on the mean and standard deviation for each measurement.
+   3. Uses descriptive activity names to name the activities in the data set
+   4. Appropriately labels the data set with descriptive activity names.
+   5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+4. A new file "tiny_data.txt" will be generated in your working directory.
 
