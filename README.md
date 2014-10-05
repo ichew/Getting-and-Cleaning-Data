@@ -41,9 +41,8 @@ From the unzipped UCI HAR Dataset, we read the files and their dim()
 
 From above, we can deduce the structure of the dataset we need to build
 
-<table>
- <tr><td> test </td></tr>
-</table>
 
 | **variable_names** | features.txt | **Subject** | **Activity** |
-| **data** | X_train.txt | subject_train.txt | y_train.txt |
+| ------------------ |:------------:| -----------:| ------------:|
+| **data**           | X_train.txt | subject_train.txt | y_train.txt |
+
