@@ -51,7 +51,7 @@ Note: Above picture taken from the Getting and Cleaning Data forum.
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 2. Un-zip and store the contents in a working directory.
-In the run_analysis.R script, set the variable **wd_path** accordingly with this working directory.
+<br>In the run_analysis.R script, set the variable **wd_path** accordingly with this working directory.
 <br>I set it to wd_path = "C:/getdata-007/UCI HAR Dataset/"  
 
 3. Run source("run_analysis.R"). This script will then
