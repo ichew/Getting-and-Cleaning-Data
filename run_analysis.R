@@ -4,6 +4,8 @@
 ##
 #########################################
 
+print("start of run_analysis.R ... ")
+
 # install and load package dplyr
 require("dplyr")
 library(dplyr)
@@ -136,6 +138,8 @@ tidy <- data %.%
 write.csv(tidy, file = 'tidy.csv', row.names = FALSE)
 
 # so for this case, you can find this exported file as C:/getdata-007/UCI HAR Dataset/tidy.csv
+
+print("end of run_analysis.R ")
 
 #########################################
 ## 
