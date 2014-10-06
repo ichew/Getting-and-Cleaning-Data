@@ -1,4 +1,10 @@
-## Raw Data source
+### CodeBook.md
+This CodeBook describes
+- the Raw Data used for this project
+- the variables after running <b>run_analysis.R</b> on the raw data.
+
+
+### Raw Data source
 
 This dataset is derived from the "Human Activity Recognition Using Smartphones Data Set" 
 <br>A full description is available at the site where the data was obtained: 
@@ -45,45 +51,96 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 - Each feature vector is a row on the text file.
 <br>
 <br>
-## Data Transformation
-From above Raw Data Source, we used run_analysis.R to 
+
+### Data Transformation
+From above Raw Data Source, we used <b>run_analysis.R</b> to 
+
 1. Merges the training and the test sets to create one data set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+ 
+### Description of the variables in the output tidy dataset:
 
+Below lists the 69 variables found in the tidy set exported from <b>run_analysis.R</b>
 
-## Description of the variables in the output tidy dataset:
-
-subject_id: a number identifying the subject (or person) who performed the activity. Its range is from 1 to 30.
-activityName: identify the activity the subject was performing. They are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
-
-Below are the 67 numeric variables representing the average of a mean or standard deviation variable over the subject / activity combination. 
-The "t" prefix denotes Time Domain, while "f" prefix denotes Frequency Domain.
-They were not named in full as it will make the fields too long.
-
-Each of the variables has the word "Mean" or "StdDev" embedded and are used to denote "Mean value" and "Standard deviation" respectively.
-The "X, Y or Z" ending letters are used to denote 3-axial signals in the X, Y and Z directions.
-
+- subject_id: a number identifying the subject (or person) who performed the activity. Its range is from 1 to 30.
+- activityName: identify the activity the subject was performing. They are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING 
+- Below are the next 67 numeric variables representing the average of a mean or standard deviation variable over the subject / activity combination. 
+<br>The "t" prefix denotes Time Domain, while "f" prefix denotes Frequency Domain.
+<br>They were not named in full as it will make the fields too long.
+<br>
+<br>Each of the variables has the word "Mean" or "StdDev" embedded and are used to denote "Mean value" and "Standard deviation" respectively.
+<br>The "X, Y or Z" ending letters are used to denote 3-axial signals in the X, Y and Z directions.
 
 The 67 numeric variables are:
 
- [1] "tBodyAccMeanX"                 "tBodyAccMeanY"                 "tBodyAccMeanZ"                 "tGravityAccMeanX"             
- [5] "tGravityAccMeanY"              "tGravityAccMeanZ"              "tBodyAccJerkMeanX"             "tBodyAccJerkMeanY"            
- [9] "tBodyAccJerkMeanZ"             "tBodyGyroMeanX"                "tBodyGyroMeanY"                "tBodyGyroMeanZ"               
-[13] "tBodyGyroJerkMeanX"            "tBodyGyroJerkMeanY"            "tBodyGyroJerkMeanZ"            "tBodyAccMagMean"              
-[17] "tGravityAccMagMean"            "tBodyAccJerkMagMean"           "tBodyGyroMagMean"              "tBodyGyroJerkMagMean"         
-[21] "fBodyAccMeanX"                 "fBodyAccMeanY"                 "fBodyAccMeanZ"                 "fBodyAccJerkMeanX"            
-[25] "fBodyAccJerkMeanY"             "fBodyAccJerkMeanZ"             "fBodyGyroMeanX"                "fBodyGyroMeanY"               
-[29] "fBodyGyroMeanZ"                "fBodyAccMagMean"               "fBodyAccJerkMagMean"           "fBodyGyroMagMean"             
-[33] "fBodyGyroJerkMagMean"          "angleOftBodyAccMeanAndGravity" "tBodyAccStdDevX"               "tBodyAccStdDevY"              
-[37] "tBodyAccStdDevZ"               "tGravityAccStdDevX"            "tGravityAccStdDevY"            "tGravityAccStdDevZ"           
-[41] "tBodyAccJerkStdDevX"           "tBodyAccJerkStdDevY"           "tBodyAccJerkStdDevZ"           "tBodyGyroStdDevX"             
-[45] "tBodyGyroStdDevY"              "tBodyGyroStdDevZ"              "tBodyGyroJerkStdDevX"          "tBodyGyroJerkStdDevY"         
-[49] "tBodyGyroJerkStdDevZ"          "tBodyAccMagStdDev"             "tGravityAccMagStdDev"          "tBodyAccJerkMagStdDev"        
-[53] "tBodyGyroMagStdDev"            "tBodyGyroJerkMagStdDev"        "fBodyAccStdDevX"               "fBodyAccStdDevY"              
-[57] "fBodyAccStdDevZ"               "fBodyAccJerkStdDevX"           "fBodyAccJerkStdDevY"           "fBodyAccJerkStdDevZ"          
-[61] "fBodyGyroStdDevX"              "fBodyGyroStdDevY"              "fBodyGyroStdDevZ"              "fBodyAccMagStdDev"            
-[65] "fBodyAccJerkMagStdDev"         "fBodyGyroMagStdDev"            "fBodyGyroJerkMagStdDev"        
+- [1] "tBodyAccMeanX"
+- "tBodyAccMeanY"
+- "tBodyAccMeanZ"
+- "tGravityAccMeanX"
+- [5] "tGravityAccMeanY"
+- "tGravityAccMeanZ"
+- "tBodyAccJerkMeanX"
+- "tBodyAccJerkMeanY"
+- [9] "tBodyAccJerkMeanZ"
+- "tBodyGyroMeanX"
+- "tBodyGyroMeanY"
+- "tBodyGyroMeanZ"
+- [13] "tBodyGyroJerkMeanX"
+- "tBodyGyroJerkMeanY"
+- "tBodyGyroJerkMeanZ"
+- "tBodyAccMagMean"
+- [17] "tGravityAccMagMean"
+- "tBodyAccJerkMagMean"
+- "tBodyGyroMagMean"
+- "tBodyGyroJerkMagMean"
+- [21] "fBodyAccMeanX"
+- "fBodyAccMeanY"
+- "fBodyAccMeanZ"
+- "fBodyAccJerkMeanX"
+- [25] "fBodyAccJerkMeanY"
+- "fBodyAccJerkMeanZ"
+- "fBodyGyroMeanX"
+- "fBodyGyroMeanY"
+- [29] "fBodyGyroMeanZ"
+- "fBodyAccMagMean"
+- "fBodyAccJerkMagMean"
+- "fBodyGyroMagMean"
+- [33] "fBodyGyroJerkMagMean"
+- "angleOftBodyAccMeanAndGravity"
+- "tBodyAccStdDevX"
+- "tBodyAccStdDevY"
+- [37] "tBodyAccStdDevZ"
+- "tGravityAccStdDevX"
+- "tGravityAccStdDevY"
+- "tGravityAccStdDevZ"
+- [41] "tBodyAccJerkStdDevX"
+- "tBodyAccJerkStdDevY"
+- "tBodyAccJerkStdDevZ"
+- "tBodyGyroStdDevX"
+- [45] "tBodyGyroStdDevY"
+- "tBodyGyroStdDevZ"
+- "tBodyGyroJerkStdDevX"
+- "tBodyGyroJerkStdDevY"
+- [49] "tBodyGyroJerkStdDevZ"
+- "tBodyAccMagStdDev"
+- "tGravityAccMagStdDev"
+- "tBodyAccJerkMagStdDev"
+- [53] "tBodyGyroMagStdDev"
+- "tBodyGyroJerkMagStdDev"
+- "fBodyAccStdDevX"
+- "fBodyAccStdDevY"
+- [57] "fBodyAccStdDevZ"
+- "fBodyAccJerkStdDevX"
+- "fBodyAccJerkStdDevY"
+- "fBodyAccJerkStdDevZ"
+- [61] "fBodyGyroStdDevX"
+- "fBodyGyroStdDevY"
+- "fBodyGyroStdDevZ"
+- "fBodyAccMagStdDev"
+- [65] "fBodyAccJerkMagStdDev"
+- "fBodyGyroMagStdDev"
+- "fBodyGyroJerkMagStdDev"       
 
