@@ -54,12 +54,14 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 <br>In the run_analysis.R script, set the variable **wd_path** accordingly with this working directory.
 <br>I set it to wd_path = "C:/getdata-007/UCI HAR Dataset/"  
 
-3. Run source("run_analysis.R"). This script will then
+3. Place the script run_analysis.R in any directory. Goto R console and run it.
+
+4. To run, please type **source("run_analysis.R")** in R-console.<br> This script will then
    1. Merges the training and the test sets to create one data set.
    2. Extracts only the measurements on the mean and standard deviation for each measurement.
    3. Uses descriptive activity names to name the activities in the data set
    4. Appropriately labels the data set with descriptive activity names.
    5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-4. A new file "tiny_data.txt" will be generated in your working directory.
+4. A new file "tidy.csv" will be generated in the directory wd_path set in the script.
 
