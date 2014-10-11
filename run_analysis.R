@@ -135,7 +135,7 @@ tidy <- data %.%
   summarise_each(funs( mean)) 
 
 # create a file of this tidy data, in the working dir set in beginning of this script
-write.csv(tidy, file = 'tidy.csv', row.names = FALSE)
+write.table(tidy, file = 'tidy.txt', row.names = FALSE)
 
 # so for this case, you can find this exported file as C:/getdata-007/UCI HAR Dataset/tidy.csv
 
