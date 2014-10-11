@@ -63,5 +63,5 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
    4. Appropriately labels the data set with descriptive activity names.
    5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-4. A new file "tidy.csv" will be generated in the directory wd_path set in the script.
+4. A new file "tidy.txt" will be generated in the directory wd_path set in the script.
 
